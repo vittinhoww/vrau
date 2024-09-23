@@ -1,19 +1,19 @@
 criaCartao(
-    'Programação',
-    'O que é Python?',
-    'O Python é uma linguagem de programação'
+    'Conhecimentos Gerais',
+    'O que tem 50 pernas mas não anda ?',
+    '25 cadeirantes'
 )
 
 criaCartao(
-    'Geografia',
-    'Qual a capital da França?',
-    'A capital da França é Paris'
+    'Física',
+    'Qual a velocidade do escuro ?',
+    'Depende da viatura😉'
 )
 
 criaCartao(
-    'Programação',
-    'O que é uma função?',
-    'Uma função é um bloco de código que executa alguma tarefa'
+    'História',
+    'Qual a parte mais clara de um escravo ?',
+    'O dono dele 👨🏻‍🦳'
 )
 
 criaCartao(
