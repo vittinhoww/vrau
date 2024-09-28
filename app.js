@@ -1,23 +1,29 @@
-criaCartao(
-    'Conhecimentos Gerais',
-    'O que tem 50 pernas mas não anda ?',
-    '25 cadeirantes'
-)
+function criaCartao(categoria, pergunta, resposta) {
+    let container = document.getElementById('container')
+    let cartao = document.createElement('article')
+    cartao.className = 'cartao'
 
-criaCartao(
-    'Física',
-    'Qual a velocidade do escuro ?',
-    'Depende da viatura😉'
-)
+    cartao.innerHTML = `
+    <div class="cartao__conteudo">
+    <h3>${categoria}</h3>
+    <div class="cartao__conteudo__pergunta">
+        <p>${pergunta}</p>
+    </div>
+    <div class="cartao__conteudo__resposta">
+        <p>${resposta}</p>
+    </div>
+    </div>
+    `
 
-criaCartao(
-    'História',
-    'Qual a parte mais clara de um escravo ?',
-    'O dono dele 👨🏻‍🦳'
-)
+    let respostaEstaVisivel = false
 
-criaCartao(
-    'TV',
-    'Porque não tem Globo Esporte na Àfrica ?',
-    'Pois só começa após o almoço'
-)
+    function viraCartao() {
+        respostaEstaVisivel = !respostaEstaVisivel
+        cartao.classList.toggle('active', respostaEstaVisivel)
+    }
+    cartao.addEventListener('click', viraCartao)
+
+
+    container.appendChild(cartao)
+
+}
